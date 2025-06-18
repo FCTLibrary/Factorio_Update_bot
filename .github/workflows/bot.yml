@@ -3,7 +3,7 @@ name: Factorio Update Telegram Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 */3 * * *'
 
 jobs:
   run-bot:
