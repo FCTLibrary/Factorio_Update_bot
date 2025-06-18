@@ -83,8 +83,8 @@ def main():
         asyncio.run(unpin_previous(token, chat_id, state.get("last_message_id")))
         message = (
             f"*Вышла новая версия Факторио* 🚀\n"
-            f"[Скачать обновление](https://factorio.com/download)\n"
-            f"Версия: *{version}*"
+            f"Ссылка на обновление: https://factorio.com/download\n"
+            f"[Версия:](https://t.me/FCTostin/14199) *{version}*"
         )
         message_id = asyncio.run(notify_and_pin(token, chat_id, message))
         state["sha256sums"] = current_sums
